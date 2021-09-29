@@ -77,7 +77,7 @@ const Navbar = () => {
               </NavLink>
             </ul>
           </div>
-          {/* <div className="navbar-large">
+          <div className="navbar-large">
             <ul>
               <NavLink to="/" className="menu-large-link">
                 Exhibition
@@ -118,7 +118,7 @@ const Navbar = () => {
                 Login
               </NavLink>
             </ul>
-          </div> */}
+          </div>
         </div>
       </nav>
     </>
