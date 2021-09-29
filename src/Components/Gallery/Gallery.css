@@ -1,0 +1,246 @@
+.gallery {
+  background-color: burlywood;
+  width: 100%;
+  height: 200px;
+  /* margin-top: -22px; */
+}
+.gallery-container {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      to right,
+      rgba(14, 236, 151, 0.1),
+      rgba(128, 13, 223, 0.1)
+    ),
+    url(./image.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.gallery-container h1 {
+  font-size: 40px;
+  color: white;
+}
+.gallery-second-part-container {
+  display: flex;
+  /* background-color: white; */
+  /* width: 50%; */
+}
+.gallery-second-catagory {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: grey;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  border-right: 1px solid grey;
+}
+.second-catagories {
+  color: grey;
+  font-size: 16px;
+}
+.all {
+  color: brown;
+  font-size: 16px;
+}
+.gallery-second-filter {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-all {
+  padding: 10px 0;
+}
+.all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-second-filter {
+  color: grey;
+}
+.gallery-large-section {
+  display: none;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 10px;
+}
+.header-container {
+  position: absolute;
+  top: 0px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.336);
+  width: 100%;
+  margin-left: -20px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.closeButton {
+  border: none;
+  border-left: 0.5px solid rgba(128, 128, 128, 0.336);
+  padding: 8px 10px;
+}
+.modal-parts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.infinite-gallery {
+  width: 100%;
+  padding-bottom: 40px;
+  background-color: rgb(239, 239, 239);
+}
+.infinite-gallery-container {
+  background-color: rgb(239, 239, 239);
+  padding: 20px 0;
+  width: 90%;
+  margin: auto;
+}
+.g-img img {
+  width: 286px;
+  height: 210px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.g-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+.g-desc {
+  font-size: 12px;
+}
+.g-title-info {
+  font-size: 14px;
+  color: grey;
+}
+.gallery-infos {
+  padding-top: 10px;
+  width: 200px;
+  height: 56.8px;
+}
+.g-img {
+  position: relative;
+}
+.g-map {
+  width: 290px;
+  height: 293.8px;
+}
+.heart {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+@media only screen and (min-width: 375px) {
+  .g-img img {
+    width: 342px;
+  }
+  .g-img {
+    width: 342px;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .g-img img {
+    width: 374px;
+  }
+  .g-img {
+    width: 374px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .g-img img {
+    width: 330px;
+  }
+  .g-img {
+    width: 330px;
+  }
+  .g-map {
+    width: 345px;
+    height: 293.8px;
+  }
+  .infinite-gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .g-map {
+    width: 290px;
+    padding: 0px 8px;
+  }
+  .g-img img {
+    width: 290px;
+  }
+  .g-img {
+    width: 290px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .gallery-second-part {
+    display: none;
+  }
+  .gallery-large-section {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 4px;
+    height: 60px;
+  }
+  .gallery-large-section-catagories {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 0.5px solid grey;
+  }
+  .gallery-large-section-middle {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60%;
+    margin-left: -20px;
+  }
+  .gallery-large-section-right {
+    width: 20%;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+  }
+  .gallery-middle-all {
+    color: Brown;
+    font-weight: 500;
+  }
+  .gallery-middle-parts {
+    color: grey;
+    font-weight: 500;
+  }
+  .gallery-large-Price {
+    border-right: 1px solid grey;
+    padding-right: 20px;
+    font-weight: 400;
+  }
+  .gallery-large-Sorts {
+    padding-left: 20px;
+    font-weight: 400;
+  }
+  .g-map {
+    width: 268px;
+    padding: 0px 8px;
+  }
+  .g-img img {
+    width: 268px;
+  }
+  .g-img {
+    width: 268px;
+  }
+}

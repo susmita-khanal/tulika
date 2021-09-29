@@ -1,0 +1,257 @@
+.login {
+  /* background: url(./Login.jpg) rgba(255, 255, 255, 0.925); */
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+      to right,
+      rgba(232, 229, 235, 0.692),
+      rgba(196, 191, 201, 0.438)
+    ),
+    url(./Login.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* margin-bottom: 30px; */
+}
+.login-container {
+  padding-top: 30px;
+  width: 80%;
+  margin: auto;
+}
+.login-heading {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+}
+.login-paragraph {
+  color: rgb(97, 96, 96);
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+}
+.google {
+  width: 110px;
+  background-color: rgb(212, 71, 94);
+  height: 24px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+.fa-google {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.facebook {
+  width: 110px;
+  background-color: rgb(71, 116, 212);
+  height: 24px;
+  border-radius: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  margin-left: 10px;
+}
+
+.ggl {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.fb {
+  padding-left: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+.fa-facebook-f {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+.fb-ggl-msg {
+  display: flex;
+}
+.msg {
+  margin-left: 10px;
+  border-radius: 50%;
+  background-color: black;
+  width: 30px;
+  padding: 2px 8px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fa-envelope {
+  color: white;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+}
+.field-input input {
+  width: 240px;
+  height: 30px;
+  border-radius: 4px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.644);
+}
+.forget {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 14px;
+}
+.login-page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  background-color: rgba(165, 42, 42, 0.692);
+  padding: 8px 0px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: white;
+  font-size: 20px;
+}
+.underline-or {
+  display: flex;
+  margin-top: 10px;
+}
+.underline {
+  color: grey;
+}
+.or {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+  font-size: 16px;
+  padding: 0px 4px;
+}
+
+@media only screen and (min-width: 375px) {
+  .login-paragraph {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .underline {
+    width: 200px;
+  }
+  .or {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  .field-input input {
+    width: 286px;
+    height: 40px;
+    margin-bottom: 4px;
+  }
+  .login-page-button {
+    width: 300px;
+    padding: 12px 0;
+  }
+}
+@media only screen and (min-width: 414px) {
+  .field-input input {
+    width: 310px;
+  }
+  .login-page-button {
+    width: 320px;
+    padding: 12px 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .field-input input {
+    width: 310px;
+  }
+  .login-page-button {
+    width: 320px;
+    padding: 12px 0;
+  }
+  .login {
+    background: linear-gradient(
+        to right,
+        rgba(232, 229, 235, 0.096),
+        rgba(196, 191, 201, 0.055)
+      ),
+      url(./Login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* margin-bottom: 30px; */
+  }
+  .login-container {
+    padding-left: 30px;
+    background-color: white;
+    height: 980px;
+    width: 360px;
+    position: absolute;
+    right: 2%;
+  }
+  .field-input input {
+    background-color: rgb(226, 225, 224);
+  }
+  .login-page-button {
+    background-color: rgba(165, 42, 42, 0.829);
+  }
+  .login-paragraph {
+    width: 300px;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+  .underline {
+    color: rgba(128, 128, 128, 0.192);
+  }
+  .or {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .login-container {
+    /* height: 300px; */
+    width: 300px;
+  }
+  .field-input input {
+    background-color: rgb(226, 225, 224);
+  }
+  .field-input input {
+    width: 260px;
+    font-family: "Roboto", sans-serif;
+  }
+  .login-page-button {
+    width: 276px;
+    padding: 12px 0;
+    font-family: "Roboto", sans-serif;
+  }
+  .google {
+    width: 60px;
+    padding: 12px 24px;
+  }
+  .facebook {
+    width: 60px;
+    padding: 12px 24px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .login-container {
+    height: 518px;
+  }
+  .login-page-button {
+    width: 270px;
+    /* padding: 12px 0; */
+  }
+}
