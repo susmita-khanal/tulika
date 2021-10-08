@@ -1,0 +1,245 @@
+.Feed {
+  width: 100%;
+  background-color: rgba(202, 200, 200, 0.514);
+  padding-top: 20px;
+  padding-bottom: 120px;
+}
+.Feed-box1 {
+  display: none;
+}
+.feed-Box2 {
+  padding-top: 40px;
+  width: 90%;
+  /* display: flex; */
+  margin: auto;
+  /* background-color: white; */
+  border-radius: 4px;
+  /* background-color: white; */
+}
+.feed-profile-img {
+  padding-right: 14px;
+}
+.feed-profile-img img {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+}
+
+.feed-box-part {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 14px 16px;
+}
+.box2-info {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  /* padding-top: 10px; */
+}
+.box2-profile-name {
+  font-size: 16px;
+  font-family: "Robotto", sans-serif;
+  font-weight: 700;
+  margin-top: -8px;
+}
+.box2-days {
+  color: grey;
+  font-size: 14px;
+}
+.feed-big-img img {
+  width: 100%;
+  height: 724px;
+  object-fit: cover;
+}
+.image-icon-info {
+  height: 40px;
+  display: flex;
+  /* width: 90%; */
+  margin: auto;
+  margin-top: 10px;
+}
+.feed-heart,
+.feed-comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.feed-icon {
+  font-size: 22px;
+  padding-left: 14px;
+  font-weight: 500;
+}
+.feed-desc {
+  width: 92%;
+  margin: auto;
+  padding-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+.abc {
+  padding-left: 10px;
+}
+.feed-field {
+  width: 92%;
+  margin: auto;
+}
+.feed-field input {
+  width: 100%;
+  border: none;
+  padding-left: 8px;
+  color: grey;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+}
+.feed-comment-info {
+  height: 120px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .feed-box-part {
+    width: 90%;
+  }
+  .Feed-box1 {
+    display: flex;
+    position: fixed;
+    width: 30%;
+    height: 88vh;
+    top: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 30px;
+    z-index: 0;
+  }
+  .image-icon-info {
+    padding-left: 8px;
+  }
+  .img-data img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .feed-Box2 {
+    width: 68%;
+    margin-left: 32%;
+  }
+  .feed-box-part {
+    width: 94%;
+  }
+  .Feed-sortby {
+    width: 180px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+    color: rgb(106, 52, 50);
+    font-family: "Roboto", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    padding: 12px 0;
+  }
+  .allfeed {
+    width: 100%;
+    height: 20px;
+    background-color: rgb(203, 202, 200);
+    margin-left: -50px;
+    text-align: center;
+    padding: 10px 30px;
+    margin-top: 20px;
+    /* border-left: 60%; */
+    border-radius: 30px;
+    font-size: 12px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
+  .fa-chevron-right {
+    /* padding-right: 40px; */
+    /* padding-left: 140px; */
+    /* padding-bottom: 30px; */
+    /* margin-bottom: -20px; */
+  }
+  .top-studios-part {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+  }
+  .top-studios {
+    margin-top: 30px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    height: 30px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+  }
+  .feed-profile-name {
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+  }
+  .img-data {
+    display: flex;
+    height: 40px;
+    width: 180px;
+
+    margin-top: 10px;
+  }
+  .image-data-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .feed-profile-name {
+    width: 120px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 6px;
+    padding-left: 14px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .Feed-box1 {
+    width: 26%;
+    z-index: 0;
+  }
+  .feed-Box2 {
+    width: 50%;
+    margin-left: 38%;
+    padding-top: 60px;
+  }
+  .allfeed {
+    margin-left: -60px;
+  }
+  .image-data-list {
+    padding-top: 10px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .Feed-box1 {
+    width: 22%;
+    z-index: 0;
+  }
+  .box2-info {
+    width: 100%;
+  }
+  .feed-box-part {
+    width: 94.5%;
+  }
+  .feed-Box2 {
+    width: 46%;
+    margin-left: 40%;
+    margin-top: -10px;
+  }
+  .allfeed {
+    margin-left: -64px;
+  }
+  .feed-profile-name {
+    font-size: 14px;
+  }
+  .img-data img {
+    width: 40px;
+    height: 40px;
+  }
+}

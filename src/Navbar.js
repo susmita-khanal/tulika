@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import ThemeToggleBtn from "./Components/ThemeToggleBtn";
+import { useSelector, useDispatch } from "react-redux";
+// import DarkTheme from "./DarkTheme";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [navLinkOpen, setNavLinkOpen] = useState(false);
+  const myTheme = useSelector((state) => state.changeTheme.theme);
+  const textColor = myTheme === "light" ? "#000" : "#fff";
   const handleBar = () => {
     setNavLinkOpen(!navLinkOpen);
   };
@@ -13,26 +18,42 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="navbar">
+        <div
+          className="navbar"
+          style={{
+            background: myTheme === "dark" ? "#000" : "#fff",
+            color: textColor,
+          }}
+        >
           <div onClick={handleBar} className="navbar-bar">
             <i
               className={navLinkOpen ? "far fa-times" : "fal fa-bars"}
-              style={{ color: "white" }}
+              style={{ color: "white", color: textColor }}
             />
           </div>
 
           <div className="navbar-left">
-            <img src="images/Logo.png" alt="" />
+            {" "}
+            <Link to="/">
+              <img style={{ color: textColor }} src="images/Logo.png" alt="" />
+            </Link>
           </div>
           <div className="navbar-field">
             <input type="text" placeholder="Type to search" />
           </div>
+          <ThemeToggleBtn />
           <div className={navLinkOpen ? "menu-active" : "menu"}>
             <ul>
               <Link className="menu-link register-login">
                 <div className="nav-register">Register/login</div>
               </Link>
-              <NavLink to="/" className="menu-link" onClick={closeMobileMenu}>
+              <NavLink
+                to="/exhibition"
+                className="menu-link"
+                onClick={closeMobileMenu}
+                activeStyle={{ backgroundColor: "Brown" }}
+                style={{ color: textColor }}
+              >
                 Exhibition
               </NavLink>
               <NavLink
@@ -79,40 +100,62 @@ const Navbar = () => {
           </div>
           <div className="navbar-large">
             <ul>
-              <NavLink to="/" className="menu-large-link">
+              <NavLink
+                to="/exhibition"
+                style={{ color: textColor }}
+                className="menu-large-link"
+                activeStyle={{ backgroundColor: "Brown", width: "60px" }}
+              >
                 Exhibition
               </NavLink>
               <NavLink
                 to="/gallery"
-                activeStyle={{ backgroundColor: "Brown" }}
+                style={{ color: textColor }}
+                activeStyle={{ backgroundColor: "Brown", width: "60px" }}
                 className="menu-large-link"
               >
                 Gallery
               </NavLink>
               <NavLink
                 to="/store"
-                activeStyle={{ backgroundColor: "Brown" }}
+                style={{ color: textColor }}
+                activeStyle={{
+                  backgroundColor: "Brown",
+                  width: "60px",
+                }}
                 className="menu-large-link"
               >
                 Store
               </NavLink>
               <NavLink
+                style={{ color: textColor }}
                 to="/studios"
-                activeStyle={{ backgroundColor: "Brown" }}
+                activeStyle={{
+                  backgroundColor: "Brown",
+                  width: "60px",
+                }}
                 className="menu-large-link"
               >
                 Studios
               </NavLink>
               <NavLink
+                style={{ color: textColor }}
                 to="/feed"
-                activeStyle={{ backgroundColor: "Brown" }}
+                activeStyle={{
+                  backgroundColor: "Brown",
+                  width: "60px",
+                }}
                 className="menu-large-link"
               >
                 Feed
               </NavLink>
               <NavLink
+                style={{ color: textColor }}
                 to="/login"
-                activeStyle={{ backgroundColor: "Brown" }}
+                activeStyle={{
+                  backgroundColor: "Brown",
+                  width: "60px",
+                }}
                 className="menu-large-link"
               >
                 Login
@@ -120,6 +163,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+        {/* <DarkTheme /> */}
       </nav>
     </>
   );

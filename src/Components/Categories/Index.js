@@ -1,11 +1,20 @@
 import React from "react";
 import Sdata from "./Sdata";
 import "./Style.css";
+import { useSelector } from "react-redux";
 
-const index = () => {
+const Index = () => {
+  const myTheme = useSelector((state) => state.changeTheme.theme);
+  const textColor = myTheme === "light" ? "#000" : "#fff";
   return (
     <>
-      <div className="catagories">
+      <div
+        className="catagories"
+        style={{
+          background: myTheme === "dark" ? "#000" : "#fff",
+          color: textColor,
+        }}
+      >
         <h3>Catagories</h3>
         <div className="catagories-container">
           {Sdata.map((cval) => {
@@ -28,4 +37,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Index;

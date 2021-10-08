@@ -1,0 +1,245 @@
+.home-container {
+  width: 80%;
+  margin: 30px 10%;
+}
+.Bhitta {
+  display: flex;
+  background-color: white;
+}
+.bhitta-left-box {
+  width: 80%;
+}
+.Home-title {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Lobster Two", cursive;
+  letter-spacing: 1px;
+}
+.Home-paragraph {
+  font-family: poppins;
+  font-size: 10px;
+  font-weight: 600;
+  padding-left: 10px;
+  letter-spacing: 2.66px;
+  text-transform: uppercase;
+}
+.Artist {
+  border: 2px solid rgba(128, 128, 128, 0.658);
+  width: 70px;
+  height: 90px;
+  border-radius: 50%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.twentysix {
+  font-size: 20px;
+  font-family: "Lobster Two", cursive;
+}
+.art {
+  font-size: 10px;
+}
+.Home-box-two {
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  margin: 20px 0;
+  background-image: url(./home-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Home-box-one {
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  margin: 20px 0;
+  background-image: url(./homebackground.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Home-box-three {
+  width: 100%;
+  height: 90px;
+  border-radius: 4px;
+  margin: 20px 0;
+  background-color: rgba(0, 0, 0, 0.637);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Home-box-one-name {
+  padding-left: 40px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+.Home-box-one-contemporary {
+  padding-left: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
+.Home-box-one-Music {
+  padding-left: 40px;
+  font-size: 14px;
+  color: white;
+}
+@media only screen and (min-width: 375px) {
+  .Home-title {
+    font-size: 50px;
+    font-weight: 1000;
+  }
+  .Home-paragraph {
+    font-size: 12px;
+    letter-spacing: 3.2px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .bhitta-left-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Home-paragraph {
+    padding-left: 80px;
+  }
+  .Home-title {
+    font-size: 64px;
+  }
+  .Artist {
+    width: 100px;
+    height: 90px;
+  }
+  .Home-box-one,
+  .Home-box-two,
+  .Home-box-three {
+    width: 100%;
+    height: 180px;
+  }
+  .Home-box-one-name {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .Home-box-one-contemporary {
+    font-size: 16px;
+  }
+  .Home-box-one-Music {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home-container {
+    width: 97%;
+    margin: 0px 3%;
+    /* margin: 30px 10%; */
+  }
+  .home-box-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 255, 255);
+  }
+  .Home-box-one,
+  .Home-box-two,
+  .Home-box-three {
+    width: 46%;
+    height: 140px;
+    margin: 10px 10px;
+  }
+
+  .Home-box-one-name {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .Home-box-one-contemporary {
+    font-size: 20px;
+  }
+  .Home-box-one-Music {
+    font-size: 16px;
+  }
+  .Bhitta {
+    margin: 40px 0;
+  }
+  .Home-title {
+    font-size: 100px;
+  }
+  .Home-paragraph {
+    padding-left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 8px;
+  }
+  .Artist {
+    margin: 40px 0;
+    margin-left: 50px;
+  }
+  .page {
+    width: 180px;
+    padding: 12px 0;
+    /* width: 180px;
+    height: 50px; */
+    /* padding: 20px 0px; */
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 41%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .page-arrow1 {
+    border-right: 1px solid grey;
+    padding-right: 46px;
+  }
+  .arrow {
+    color: white;
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .home-container {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .Home-box-one,
+  .Home-box-two,
+  .Home-box-three {
+    width: 42%;
+    height: 140px;
+    margin: 10px 20px;
+  }
+
+  .Home-box-one-name {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .Home-box-one-contemporary {
+    font-size: 20px;
+  }
+  .Home-box-one-Music {
+    font-size: 16px;
+  }
+  .Bhitta {
+    margin: 40px 0;
+  }
+  /* .page-arrow1 {
+    padding-right: 50px;
+  } */
+  .page {
+    margin-left: 44%;
+  }
+}

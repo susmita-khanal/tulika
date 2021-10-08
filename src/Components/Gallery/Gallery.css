@@ -23,6 +23,9 @@
   font-size: 40px;
   color: white;
 }
+.gallery-second-part {
+  border-bottom: 1px solid rgba(158, 158, 158, 0.267);
+}
 .gallery-second-part-container {
   display: flex;
   /* background-color: white; */
@@ -193,7 +196,6 @@
   .gallery-large-section {
     display: flex;
     justify-content: space-between;
-    box-shadow: 1px 1px 4px;
     height: 60px;
   }
   .gallery-large-section-catagories {
@@ -201,7 +203,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-right: 0.5px solid grey;
+    border-right: 0.5px solid rgba(128, 128, 128, 0.151);
   }
   .gallery-large-section-middle {
     display: flex;

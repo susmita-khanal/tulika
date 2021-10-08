@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import { useSelector } from "react-redux";
 
 const Category = ({
   openModal,
@@ -8,12 +9,20 @@ const Category = ({
   closeModal,
   customStyles,
 }) => {
+  const myTheme = useSelector((state) => state.changeTheme.theme);
+  const textColor = myTheme === "light" ? "#000" : "#fff";
   return (
     <>
       {" "}
       <div className="gallery-second-part">
         <div className="gallery-second-part-container">
-          <div className="gallery-second-catagory">
+          <div
+            className="gallery-second-catagory"
+            style={{
+              background: myTheme === "dark" ? "#000" : "#fff",
+              color: textColor,
+            }}
+          >
             <div>
               <div onClick={openModal}>
                 <div className="second-catagories">catagories</div>
@@ -50,7 +59,13 @@ const Category = ({
           <div className="gallery-second-filter">Filter</div>
         </div>
       </div>
-      <div className="gallery-large-section">
+      <div
+        className="gallery-large-section"
+        style={{
+          background: myTheme === "dark" ? "#000" : "#fff",
+          color: textColor,
+        }}
+      >
         <div className="gallery-large-section-catagories">Categories</div>
         <div className="gallery-large-section-middle">
           <div className="gallery-middle-all">All</div>

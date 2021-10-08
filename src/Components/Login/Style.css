@@ -31,7 +31,7 @@
 }
 .google {
   width: 110px;
-  background-color: rgb(212, 71, 94);
+  background-color: rgb(213, 75, 61);
   height: 24px;
   border-radius: 60px;
   display: flex;
@@ -46,7 +46,7 @@
 }
 .facebook {
   width: 110px;
-  background-color: rgb(71, 116, 212);
+  background-color: rgb(60, 89, 154);
   height: 24px;
   border-radius: 60px;
   display: flex;
@@ -115,12 +115,12 @@
   justify-content: center;
   align-items: center;
   width: 250px;
-  background-color: rgba(165, 42, 42, 0.692);
+  background-color: rgb(152, 75, 72);
   padding: 8px 0px;
   border-radius: 8px;
   margin-top: 20px;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
 }
 .underline-or {
   display: flex;
@@ -141,13 +141,12 @@
 @media only screen and (min-width: 375px) {
   .login-paragraph {
     font-size: 14px;
-    font-weight: 500;
   }
   .underline {
     width: 200px;
   }
   .or {
-    font-size: 20px;
+    font-size: 16px;
     margin-right: 10px;
   }
   .field-input input {
@@ -191,6 +190,7 @@
     /* margin-bottom: 30px; */
   }
   .login-container {
+    padding-top: 100px;
     padding-left: 30px;
     background-color: white;
     height: 980px;
@@ -221,9 +221,11 @@
   }
 }
 @media only screen and (min-width: 1024px) {
+  .login {
+  }
   .login-container {
-    /* height: 300px; */
     width: 300px;
+    height: 500px;
   }
   .field-input input {
     background-color: rgb(226, 225, 224);
@@ -235,6 +237,7 @@
   .login-page-button {
     width: 276px;
     padding: 12px 0;
+    height: 15px;
     font-family: "Roboto", sans-serif;
   }
   .google {
@@ -246,12 +249,51 @@
     padding: 12px 24px;
   }
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
   .login-container {
-    height: 518px;
+    /* height: 662px; */
+    margin-top: 9px;
+    z-index: 0;
   }
   .login-page-button {
     width: 270px;
+    height: 15px;
     /* padding: 12px 0; */
+  }
+  .fa-google {
+    font-size: 16px;
+    font-weight: 300;
+  }
+  .ggl {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .fa-facebook-f {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .facebook {
+    height: 18px;
+    width: 60px;
+  }
+  .google {
+    height: 18px;
+    width: 60px;
+  }
+  .fb {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .login-paragraph {
+    font-size: 12px;
+    color: rgb(171, 172, 171);
+    font-weight: 400;
+    line-height: 18px;
+    width: 290px;
+  }
+  .login-heading {
+    font-size: 22px;
+    font-weight: 500;
   }
 }

@@ -1,15 +1,15 @@
 import React from "react";
-import "./Exhibition.css";
+import "./Home.css";
 import ExiData from "./ExiData";
-import Categories from "./Categories";
-import Featured from "./Featured/Index";
-import NewMedia from "./NewMedia/Index";
+import Categories from "../Categories/Index";
+import Featured from "../Featured/Index";
+import NewMedia from "../NewMedia/Index";
 
-const Exhibition = () => {
+const Home = () => {
   return (
     <>
       <div className="cover-image">
-        <img src="images/cover.jpg" alt="" />
+        <img src="images/img-6.jpg" alt="" />
       </div>
       <div className="exhibition-down">
         <div className="exhibition">
@@ -40,4 +40,4 @@ const Exhibition = () => {
   );
 };
 
-export default Exhibition;
+export default Home;
