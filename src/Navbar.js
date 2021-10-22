@@ -18,27 +18,26 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div
-          className="navbar"
-          style={{
-            background: myTheme === "dark" ? "#000" : "#fff",
-            color: textColor,
-          }}
-        >
+        <div className="navbar">
           <div onClick={handleBar} className="navbar-bar">
             <i
               className={navLinkOpen ? "far fa-times" : "fal fa-bars"}
               style={{ color: "white", color: textColor }}
             />
           </div>
-
           <div className="navbar-left">
             {" "}
             <Link to="/">
               <img style={{ color: textColor }} src="images/Logo.png" alt="" />
             </Link>
           </div>
-          <div className="navbar-field">
+          <div
+            className="navbar-field"
+            // style={{
+            //   background: myTheme === "dark" ? "#000" : "fff",
+            //   color: textColor,
+            // }}
+          >
             <input type="text" placeholder="Type to search" />
           </div>
           <ThemeToggleBtn />
@@ -102,7 +101,6 @@ const Navbar = () => {
             <ul>
               <NavLink
                 to="/exhibition"
-                style={{ color: textColor }}
                 className="menu-large-link"
                 activeStyle={{ backgroundColor: "Brown", width: "60px" }}
               >
@@ -110,7 +108,6 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/gallery"
-                style={{ color: textColor }}
                 activeStyle={{ backgroundColor: "Brown", width: "60px" }}
                 className="menu-large-link"
               >
@@ -118,7 +115,6 @@ const Navbar = () => {
               </NavLink>
               <NavLink
                 to="/store"
-                style={{ color: textColor }}
                 activeStyle={{
                   backgroundColor: "Brown",
                   width: "60px",
@@ -128,7 +124,6 @@ const Navbar = () => {
                 Store
               </NavLink>
               <NavLink
-                style={{ color: textColor }}
                 to="/studios"
                 activeStyle={{
                   backgroundColor: "Brown",
@@ -139,7 +134,6 @@ const Navbar = () => {
                 Studios
               </NavLink>
               <NavLink
-                style={{ color: textColor }}
                 to="/feed"
                 activeStyle={{
                   backgroundColor: "Brown",
@@ -150,7 +144,6 @@ const Navbar = () => {
                 Feed
               </NavLink>
               <NavLink
-                style={{ color: textColor }}
                 to="/login"
                 activeStyle={{
                   backgroundColor: "Brown",

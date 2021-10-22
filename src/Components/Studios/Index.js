@@ -47,8 +47,20 @@ const Studios = () => {
         customStyles
       />
 
-      <div className="studios">
-        <div className="studios-container">
+      <div
+        className="studios"
+        style={{
+          background: myTheme === "dark" ? "#000" : "#fff",
+          color: textColor,
+        }}
+      >
+        <div
+          className="studios-container"
+          style={{
+            background: myTheme === "dark" ? "#000" : "#fff",
+            color: textColor,
+          }}
+        >
           {Sdata.map((c) => {
             return (
               <>

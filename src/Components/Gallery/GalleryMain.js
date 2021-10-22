@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Sdata from "./Sdata";
 import "./Gallery.css";
 
@@ -19,6 +20,8 @@ const customStyles = {
   },
 };
 const GalleryMain = () => {
+  const myTheme = useSelector((state) => state.changeTheme.theme);
+  const textColor = myTheme === "light" ? "#000" : "#fff";
   const [modalIsOpen, setIsOpen] = React.useState(false);
   const openModal = () => {
     setIsOpen(true);
@@ -102,8 +105,20 @@ const GalleryMain = () => {
             <div className="gallery-large-Sorts">Sort By</div>
           </div>
         </div> */}
-        <div className="infinite-gallery">
-          <div className="infinite-gallery-container">
+        <div
+          className="infinite-gallery"
+          style={{
+            background: myTheme === "dark" ? "#000" : "#fff",
+            color: textColor,
+          }}
+        >
+          <div
+            className="infinite-gallery-container"
+            style={{
+              background: myTheme === "dark" ? "#000" : "#fff",
+              color: textColor,
+            }}
+          >
             {Sdata.map((cval) => {
               return (
                 <>

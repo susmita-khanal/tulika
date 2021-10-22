@@ -1,10 +1,13 @@
 import React, { Component } from "react";
+import { useSelector } from "react-redux";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Style.css";
 
 const Index = () => {
+  const myTheme = useSelector((state) => state.changeTheme.theme);
+  const textColor = myTheme === "light" ? "#000" : "#fff";
   const settings = {
     dots: false,
     infinite: true,
@@ -14,8 +17,20 @@ const Index = () => {
   };
   return (
     <>
-      <div className="whole-coursel">
-        <div className="image-coursel">
+      <div
+        className="whole-coursel"
+        style={{
+          background: myTheme === "dark" ? "#000" : "#fff",
+          color: textColor,
+        }}
+      >
+        <div
+          className="image-coursel"
+          style={{
+            background: myTheme === "dark" ? "#000" : "#fff",
+            color: textColor,
+          }}
+        >
           <h3> Newmedia Artwork</h3>
           <Slider {...settings}>
             <div className="image-slide">

@@ -4,8 +4,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: black;
   z-index: 1;
+  background-color: black;
   position: fixed;
 }
 .menu-large-link {

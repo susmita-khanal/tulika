@@ -7,15 +7,31 @@ const ThemeToggleBtn = () => {
   const myTheme = useSelector((state) => state.changeTheme.theme);
   const dispatch = useDispatch();
 
-  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const [isDarkMode, setIsDarkMode] = useState(false);
   const textColor = myTheme === "light" ? "#fff" : "#fff";
   const getTheme = () => {
     return JSON.parse(localStorage.getItem("myTheme"));
   };
+  const handleDark = () => {
+    if (myTheme == "dark") {
+      dispatch(darkMode("light"));
+      localStorage.setItem("myTheme", "light");
+    } else {
+      dispatch(darkMode("dark"));
+      localStorage.setItem("myTheme", "dark");
+    }
+  };
+  const getLocalStorageItem = async () => {
+    const savedTheme = await localStorage.getItem("myTheme");
+    if (savedTheme) {
+      dispatch(darkMode(savedTheme));
+    } else {
+      dispatch(darkMode("light"));
+    }
+  };
   useEffect(() => {
-    localStorage.setItem("myTheme", JSON.stringify(myTheme));
-  }, [myTheme]);
-  console.log(myTheme);
+    getLocalStorageItem();
+  }, []);
   return (
     <div
       style={{
@@ -23,15 +39,10 @@ const ThemeToggleBtn = () => {
         color: textColor,
       }}
     >
-      <div onClick={() => dispatch(darkMode("dark"))}>
-        <i
-          className="fas fa-moon"
-          style={{ color: "#D9FBFF", color: "#D9FBFF", size: "18" }}
-        ></i>
-      </div>
-      <div onClick={() => dispatch(darkMode("light"))}>
-        <i className="fas fa-sun" style={{ color: "gold", border: "none" }}></i>
-      </div>
+      <div
+        onClick={handleDark}
+        className={myTheme === "dark" ? "fas fa-moon" : "fas fa-sun"}
+      ></div>
     </div>
   );
 };

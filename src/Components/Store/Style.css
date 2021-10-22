@@ -1,0 +1,19 @@
+.store {
+  width: 100%;
+  height: 90vh;
+}
+.practice {
+  width: 400px;
+  height: 400px;
+  background-color: aqua;
+  /* border-radius: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: circle(23.2% at 100% 0);
+  transform: translate(50%, 50%);
+  transition: 3s;
+}
+.practice:hover {
+  clip-path: circle(140.2% at 100% 0);
+}
